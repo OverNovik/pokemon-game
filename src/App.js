@@ -1,6 +1,8 @@
 import Footer from './components/Footer';
 import Layout from './components/Layout';
 import Header from './components/Header';
+import Layout2 from './assets/bg2.jpg';
+import Layout3 from './assets/bg3.jpg';
 
 const  App = () => {
   return (
@@ -13,7 +15,7 @@ const  App = () => {
       title="This is title Layout 1"
       descr="This is Description Layout 1"
       id="first"
-      urlBg="./bg2.jpg"
+      urlBg={Layout2}
     />
     <Layout
       title="This is title Layout 2"
@@ -25,7 +27,7 @@ const  App = () => {
       title="This is title Layout 3"
       descr="This is Description Layout 3"
       id="three"
-      urlBg="/bg3.jpg"
+      urlBg={Layout3}
     />
     <Footer />
   </>

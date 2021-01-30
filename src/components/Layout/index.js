@@ -2,9 +2,11 @@ import layoutStyle from './style.module.css';
 
 
 const Layout = ({title, descr, id, urlBg, colorBg}) => {
-    const sectionStyle = urlBg ? {background: `url(${urlBg})`} : {backgroundColor: colorBg}
+    const style = {};
+    if (urlBg) { style.background = `url(${urlBg})` };
+    if (colorBg) { style.background = colorBg };
     return (
-        <section style={sectionStyle} class={layoutStyle.root}  id={id}>
+        <section style={style} class={layoutStyle.root}  id={id}>
             <div class="wrapper">
                 <article>
                     <div class="title">
