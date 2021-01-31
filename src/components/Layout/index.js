@@ -1,7 +1,7 @@
 import layoutStyle from './style.module.css';
 
 
-const Layout = ({title, descr, id, urlBg, colorBg}) => {
+const Layout = ({title, descr, id, urlBg, colorBg, children}) => {
     const style = {};
     if (urlBg) { style.background = `url(${urlBg})` };
     if (colorBg) { style.background = colorBg };
@@ -15,6 +15,7 @@ const Layout = ({title, descr, id, urlBg, colorBg}) => {
                     </div>
                     <div class="desc full">
                         <p>{descr}</p>
+                        {children}
                     </div>
                 </article>
             </div>
