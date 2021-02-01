@@ -6,14 +6,14 @@ const Layout = ({title, descr, id, urlBg, colorBg, children}) => {
     if (urlBg) { style.background = `url(${urlBg})` };
     if (colorBg) { style.background = colorBg };
     return (
-        <section style={style} class={layoutStyle.root}  id={id}>
-            <div class="wrapper">
+        <section style={style} className={layoutStyle.root}  id={id}>
+            <div className="wrapper">
                 <article>
-                    <div class="title">
+                    <div className="title">
                         <h3>{title}</h3>
-                        <span class="separator"></span>
+                        <span className="separator"></span>
                     </div>
-                    <div class="desc full">
+                    <div className="desc full">
                         <p>{descr}</p>
                         {children}
                     </div>

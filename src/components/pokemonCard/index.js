@@ -8,10 +8,12 @@ const PokemonCard = ({name, img, id, type, values}) => {
     const [isActive, setActive] = useState(false);
 
     const handleClick = () => {
-        setActive(true);
+        console.log(522)
+        setActive(!isActive);
     }
+
     return (
-        <div className={pokemonCardStyle.root} onClick={handleClick}>
+        <div className={pokemonCardStyle.root} onMouseDown={handleClick}>
             <div className={`${pokemonCardStyle.pokemonCard} ${isActive ? pokemonCardStyle.active : ''}`}>
                 <div className={pokemonCardStyle.cardFront}>
                     <div className={`${pokemonCardStyle.wrap} ${pokemonCardStyle.front}`}>
