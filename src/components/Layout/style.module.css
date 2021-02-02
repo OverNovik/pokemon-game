@@ -1,7 +1,5 @@
 
 .root {
-    height: 100%;
-    min-height: 100vh;
     font-size: 1.4rem;
     position: relative;
     background: #fafafa;
@@ -11,10 +9,8 @@
 }
 
 .root .wrapper {
-    padding: 15rem 10rem 12rem;
-    height: 100%;
-    min-height: 100vh;
-    max-width: 1400px;
+    padding: 5rem 1rem 2rem;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -34,6 +30,7 @@
 
 .root .title h3 {
     font-size: 2.4rem;
+
 }
 
 .root .separator {
